@@ -1,0 +1,47 @@
+import React from "react";
+import styled from "styled-components";
+import Hero from "./Hero";
+import WhyVea from "./WhyVea";
+import Features from "./Features";
+import UseCases from "./UseCases";
+import Cost from "./Cost";
+import HowDoesItWork from "./HowDoesItWork";
+import BecomeAKeeper from "./BecomeAKeeper";
+import Launch from "./Launch";
+import Footer from "./Footer";
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+`;
+
+const MiddleSections = styled.div`
+  max-width: 1700px;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 128px;
+`;
+
+const App = () => (
+  <div>
+    <Hero />
+    <Container>
+      <MiddleSections>
+        <WhyVea />
+        <HowDoesItWork />
+        <Features />
+        <Cost />
+        <UseCases />
+        <BecomeAKeeper />
+        <Launch />
+      </MiddleSections>
+    </Container>
+    <Footer />
+  </div>
+);
+
+export default App;
