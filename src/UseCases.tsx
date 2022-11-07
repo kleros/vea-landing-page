@@ -1,9 +1,10 @@
 import React from "react";
-import styled from "styled-components";
-import IconGavel from "svgs/icons/gavel.svg";
-import IconEconomicSecurity from "svgs/icons/economic-security.svg";
-import IconFasterThan7 from "svgs/icons/faster-7.svg";
+import styled, { css } from "styled-components";
+import IconGavel from "tsx:svgs/icons/gavel.svg";
+import IconEconomicSecurity from "tsx:svgs/icons/economic-security.svg";
+import IconFasterThan7 from "tsx:svgs/icons/faster-7.svg";
 import Card, { ICard } from "components/Card";
+import { smallScreenStyle } from "styles/smallScreenStyle";
 
 const Title = styled.h2`
   text-align: center;
@@ -18,6 +19,12 @@ const CardContainer = styled.div`
   > * {
     flex: 1;
   }
+
+  ${smallScreenStyle(css`
+    > * {
+      flex: 100%;
+    }
+  `)}
 `;
 
 const CARDS: ICard[] = [

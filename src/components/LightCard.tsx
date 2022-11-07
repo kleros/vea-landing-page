@@ -22,7 +22,6 @@ const StyledDiv = styled.div`
 `;
 
 const Header = styled.h5`
-  font-size: 1rem;
   color: ${({ theme }) => theme.color.dark};
 `;
 

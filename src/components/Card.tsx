@@ -11,6 +11,8 @@ const StyledDiv = styled.div`
   border-top: 6px solid ${({ theme }) => theme.color.white};
   padding: 32px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
   ${({ theme }) => css`
     background: linear-gradient(
@@ -23,7 +25,15 @@ const StyledDiv = styled.div`
   > .icon {
     width: 96px;
     flex-shrink: 0;
+    flex-grow: 0;
   }
+`;
+
+const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
 `;
 
 const Title = styled.h4`
@@ -33,13 +43,6 @@ const Title = styled.h4`
 
 const Body = styled.p`
   color: ${({ theme }) => theme.color.dark};
-  font-size: 1rem;
-`;
-
-const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 `;
 
 const Card: React.FC<ICard & React.HTMLAttributes<HTMLDivElement>> = ({

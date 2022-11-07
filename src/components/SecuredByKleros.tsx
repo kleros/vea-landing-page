@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ImageSecuredByKleros from "svgs/secured-by-kleros.svg";
+import ImageSecuredByKleros from "tsx:svgs/secured-by-kleros.svg";
 
 const StyledKlerosLink = styled.a`
   width: fit-content;

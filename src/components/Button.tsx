@@ -21,6 +21,7 @@ const StyledButton = styled.button`
     width: auto;
     fill: ${({ theme }) => theme.color.dark};
     z-index: 1;
+    flex-shrink: 0;
   }
 
   &:after {
@@ -53,7 +54,6 @@ const StyledButton = styled.button`
 
 const Text = styled.p`
   font-family: "Major Mono Display";
-  font-size: 1rem;
   font-weight: 600;
   color: ${({ theme }) => theme.color.dark};
   z-index: 1;

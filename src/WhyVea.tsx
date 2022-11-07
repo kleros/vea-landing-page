@@ -1,9 +1,14 @@
 import React from "react";
-import styled from "styled-components";
-import IconFast from "svgs/icons/fast.svg";
-import IconCheap from "svgs/icons/cheap.svg";
-import IconSecure from "svgs/icons/secure.svg";
+import styled, { css } from "styled-components";
+import IconFast from "tsx:svgs/icons/fast.svg";
+import IconCheap from "tsx:svgs/icons/cheap.svg";
+import IconSecure from "tsx:svgs/icons/secure.svg";
 import Card, { ICard } from "components/Card";
+import { smallScreenStyle } from "styles/smallScreenStyle";
+
+const Container = styled.div`
+  width: 100%;
+`;
 
 const Title = styled.h2`
   text-align: center;
@@ -18,6 +23,12 @@ const CardContainer = styled.div`
   > * {
     flex: 1;
   }
+
+  ${smallScreenStyle(css`
+    > * {
+      flex: 100%;
+    }
+  `)}
 `;
 
 const CARDS: ICard[] = [
@@ -36,14 +47,14 @@ const CARDS: ICard[] = [
 ];
 
 const WhyVea: React.FC = () => (
-  <div>
+  <Container>
     <Title>why bridge your messages with VeA?</Title>
     <CardContainer>
       {CARDS.map((card, i) => (
         <Card key={i} {...card} />
       ))}
     </CardContainer>
-  </div>
+  </Container>
 );
 
 export default WhyVea;

@@ -1,9 +1,9 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import Lines from "svgs/footer/lines.svg";
-import IconTwitter from "svgs/icons/twitter.svg";
-import IconGithub from "svgs/icons/github.svg";
-import IconTelegram from "svgs/icons/telegram.svg";
+import Lines from "tsx:svgs/footer/lines.svg";
+import IconTwitter from "tsx:svgs/icons/twitter.svg";
+import IconGithub from "tsx:svgs/icons/github.svg";
+import IconTelegram from "tsx:svgs/icons/telegram.svg";
 import SecuredByKleros from "components/SecuredByKleros";
 
 const LINKS = [

@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
+import { smallScreenStyle } from "styles/smallScreenStyle";
 
 export interface IBigCard {
   title?: string;
@@ -21,6 +22,9 @@ const StyledDiv = styled.div`
   background-color: ${({ theme }) => theme.color.purple};
 
   display: flex;
+  ${smallScreenStyle(css`
+    flex-wrap: wrap;
+  `)}
 `;
 
 const TextContainer = styled.div`

@@ -17,7 +17,8 @@
   },
   "alias": {
     "components": "./src/components",
-    "svgs": "./src/assets/svgs/"
+    "svgs": "./src/assets/svgs",
+    "styles": "./src/styles"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",

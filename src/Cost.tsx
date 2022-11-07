@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import BigCard, { IBigCard } from "components/BigCard";
-import IconUsers from "svgs/icons/users.svg";
-import IconKeepers from "svgs/icons/keepers.svg";
+import IconUsers from "tsx:svgs/icons/users.svg";
+import IconKeepers from "tsx:svgs/icons/keepers.svg";
 
 const Title = styled.h2`
   text-align: center;
@@ -15,7 +15,7 @@ const CardContainer = styled.div`
   justify-content: center;
   gap: 24px;
   > * {
-    flex: 1;
+    flex-grow: 1;
   }
 `;
 

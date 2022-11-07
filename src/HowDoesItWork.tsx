@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import LightCard, { ILightCard } from "components/LightCard";
 import Card from "components/Card";
-import IconBothWays from "svgs/icons/both-ways.svg";
+import IconBothWays from "tsx:svgs/icons/both-ways.svg";
 
 const CARDS: ILightCard[] = [
   {

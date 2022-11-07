@@ -1,6 +1,7 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import LightCard, { ILightCard } from "components/LightCard";
+import { smallScreenStyle } from "styles/smallScreenStyle";
 
 const FEATURES: ILightCard[] = [
   {
@@ -39,8 +40,13 @@ const CardContainer = styled.div`
   gap: 24px;
   > div {
     flex-basis: 30%;
-    flex-grow: 0;
   }
+  ${smallScreenStyle(css`
+    > div {
+      flex-basis: 50%;
+      flex-grow: 1;
+    }
+  `)}
 `;
 
 const Features: React.FC = () => (

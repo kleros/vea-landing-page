@@ -15,10 +15,14 @@ const Title = styled.h2`
   width: 65%;
 `;
 
+const StyledSocialButtons = styled(SocialButtons)`
+  justify-content: center;
+`;
+
 const Launch: React.FC = () => (
   <Container>
     <Title>VeA is launching soon, stay in touch!</Title>
-    <SocialButtons />
+    <StyledSocialButtons />
   </Container>
 );
 

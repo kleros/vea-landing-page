@@ -24,7 +24,8 @@
     "isolatedModules": true,
     "paths": {
       "components/*": ["./src/components/*"],
-      "svgs/*": ["./src/assets/svgs/*"]
+      "svgs/*": ["./src/assets/svgs/*"],
+      "styles/*": ["./src/styles/*"]
     }
   },
   "exclude": [
