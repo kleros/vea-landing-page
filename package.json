@@ -1,5 +1,5 @@
 {
-  "name": "web-template",
+  "name": "vea-landing-page",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "repository": "",
@@ -49,5 +49,8 @@
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
     "styled-components": "^5.3.6"
+  },
+  "volta": {
+    "node": "16.18.1"
   }
 }

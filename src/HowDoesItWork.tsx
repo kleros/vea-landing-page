@@ -48,7 +48,7 @@ const StyledCard = styled(Card)`
 `;
 
 const cardBody =
-  "In the worst case scenario, VEA just fails back to the native bridge. No " +
+  "In the worst case scenario, VEA just falls back to the native bridge. No " +
   "risk of losing funds.";
 
 const HowDoesItWork: React.FC = () => (

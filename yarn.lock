@@ -6379,16 +6379,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"weak-lru-cache@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "weak-lru-cache@npm:1.2.2"
-  checksum: 0fbe16839d193ed82ddb4fe331ca8cfaee2ecbd42596aa02366c708956cf41f7258f2d5411c3bc9aa099c26058dc47afbd2593d449718a18e4ef4d870c5ace18
-  languageName: node
-  linkType: hard
-
-"web-template@workspace:.":
+"vea-landing-page@workspace:.":
   version: 0.0.0-use.local
-  resolution: "web-template@workspace:."
+  resolution: "vea-landing-page@workspace:."
   dependencies:
     "@commitlint/cli": ^16.1.0
     "@commitlint/config-conventional": ^16.0.0
@@ -6418,6 +6411,13 @@ __metadata:
     typescript: ^4.5.5
   languageName: unknown
   linkType: soft
+
+"weak-lru-cache@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "weak-lru-cache@npm:1.2.2"
+  checksum: 0fbe16839d193ed82ddb4fe331ca8cfaee2ecbd42596aa02366c708956cf41f7258f2d5411c3bc9aa099c26058dc47afbd2593d449718a18e4ef4d870c5ace18
+  languageName: node
+  linkType: hard
 
 "which-boxed-primitive@npm:^1.0.2":
   version: 1.0.2
