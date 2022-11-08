@@ -14,7 +14,7 @@ const Container = styled.div`
   `)}
 `;
 
-const SocialButtons: React.FC<{ className: string }> = ({ className }) => (
+const SocialButtons: React.FC<{ className?: string }> = ({ className }) => (
   <Container {...{ className }}>
     <Button text="telegram" Icon={IconTelegram} />
     <Button text="newsletter" Icon={IconMail} />

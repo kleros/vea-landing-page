@@ -1,23 +1,24 @@
 import React from "react";
 import styled, { css } from "styled-components";
+import { smallScreenStyle } from "styles/smallScreenStyle";
 import Lines from "tsx:svgs/footer/lines.svg";
 import IconTwitter from "tsx:svgs/icons/twitter.svg";
 import IconGithub from "tsx:svgs/icons/github.svg";
 import IconTelegram from "tsx:svgs/icons/telegram.svg";
-import SecuredByKleros from "components/SecuredByKleros";
+import BuiltByKleros from "components/BuiltByKleros";
 
 const LINKS = [
   {
     Icon: IconTwitter,
-    href: "https://www.twitter.com",
+    href: "https://www.twitter.com/vea_eth",
   },
   {
     Icon: IconGithub,
-    href: "",
+    href: "https://www.github.com/kleros/vea",
   },
   {
     Icon: IconTelegram,
-    href: "",
+    href: "https://t.me/veabridge",
   },
 ];
 
@@ -51,9 +52,21 @@ const StyledLink = styled.a`
   align-items: center;
   justify-content: center;
   > svg {
-    fill: white;
-    width: 16px;
+    fill: ${({ theme }) => theme.color.white};
+    width: 32px;
+    transition: fill 0.25s ease, transform 0.25s ease;
+
+    :hover {
+      fill: ${({ theme }) => theme.color.blue};
+      transform: scale(1.05);
+    }
   }
+
+  ${smallScreenStyle(css`
+    > svg {
+      width: calc(16px + (32 - 16) * (100vw - 300px) / (1250 - 300));
+    }
+  `)}
 `;
 
 const SocialMedia = styled.div`
@@ -65,7 +78,7 @@ const SocialMedia = styled.div`
   gap: 16px;
 `;
 
-const StyledSecuredByKleros = styled(SecuredByKleros)`
+const StyledBuiltByKleros = styled(BuiltByKleros)`
   margin: 32px 0;
   position: relative;
   right: -5%;
@@ -89,7 +102,7 @@ const Footer: React.FC = () => (
         ))}
       </SocialMedia>
     </InnerContainer>
-    <StyledSecuredByKleros />
+    <StyledBuiltByKleros />
   </Container>
 );
 

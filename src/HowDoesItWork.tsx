@@ -42,7 +42,7 @@ const SubTitle = styled.h5`
 
 const StyledCard = styled(Card)`
   position: relative;
-  width: 50%;
+  width: calc(100% - (max((100% - 400px), 0px) / 2));
   right: -50%;
   transform: translateX(-50%);
 `;

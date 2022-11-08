@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ImageSecuredByKleros from "tsx:svgs/secured-by-kleros.svg";
+import ImageBuiltByKleros from "tsx:svgs/built-by-kleros.svg";
 
 const StyledKlerosLink = styled.a`
   width: fit-content;
@@ -9,18 +9,23 @@ const StyledKlerosLink = styled.a`
   display: block;
   > svg {
     width: 180px;
+    transition: transform 0.25s ease;
+
+    :hover {
+      transform: scale(1.05);
+    }
   }
 `;
 
-const SecuredByKleros: React.FC<{ className?: string }> = ({ className }) => (
+const BuiltByKleros: React.FC<{ className?: string }> = ({ className }) => (
   <StyledKlerosLink
     href="https://www.kleros.io"
     target="_blank"
     rel="noopener noreferrer"
     {...{ className }}
   >
-    <ImageSecuredByKleros />
+    <ImageBuiltByKleros />
   </StyledKlerosLink>
 );
 
-export default SecuredByKleros;
+export default BuiltByKleros;

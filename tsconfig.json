@@ -25,7 +25,8 @@
     "paths": {
       "components/*": ["./src/components/*"],
       "svgs/*": ["./src/assets/svgs/*"],
-      "styles/*": ["./src/styles/*"]
+      "styles/*": ["./src/styles/*"],
+      "hooks/*": ["./src/hooks/*"]
     }
   },
   "exclude": [
