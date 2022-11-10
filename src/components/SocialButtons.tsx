@@ -16,8 +16,12 @@ const Container = styled.div`
 
 const SocialButtons: React.FC<{ className?: string }> = ({ className }) => (
   <Container {...{ className }}>
-    <Button text="telegram" Icon={IconTelegram} />
-    <Button text="newsletter" Icon={IconMail} />
+    <Button text="telegram" href="https://t.me/veabridge" Icon={IconTelegram} />
+    <Button
+      text="newsletter"
+      href="https://mirror.xyz/blog.vea.eth/subscribe"
+      Icon={IconMail}
+    />
   </Container>
 );
 

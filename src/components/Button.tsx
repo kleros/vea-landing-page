@@ -3,8 +3,13 @@ import styled, { css } from "styled-components";
 
 export interface IButton {
   text: string;
+  href: string;
   Icon?: React.FC<React.SVGAttributes<SVGElement>>;
 }
+
+const Link = styled.a`
+  text-decoration: none;
+`;
 
 const StyledButton = styled.button`
   position: relative;
@@ -61,13 +66,16 @@ const Text = styled.p`
 
 const Button: React.FC<IButton & React.HTMLAttributes<HTMLButtonElement>> = ({
   text,
+  href,
   Icon,
   ...props
 }) => (
-  <StyledButton {...props}>
-    {Icon && <Icon className="icon" />}
-    <Text>{text}</Text>
-  </StyledButton>
+  <Link href={href} target="_blank" rel="noopener noreferrer">
+    <StyledButton {...props}>
+      {Icon && <Icon className="icon" />}
+      <Text>{text}</Text>
+    </StyledButton>
+  </Link>
 );
 
 export default Button;
