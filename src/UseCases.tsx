@@ -33,10 +33,7 @@ const CARDS: ICard[] = [
     Icon: IconGavel,
   },
   {
-    body:
-      "For high-value transactions with high security requirements (no " +
-      "additional security assumption such as a multisig admin, off-chain " +
-      "routing network or middle-chain)",
+    body: "For high-value transactions with high security requirements.",
     Icon: IconEconomicSecurity,
   },
   {

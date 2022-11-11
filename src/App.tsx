@@ -4,7 +4,7 @@ import Hero from "./Hero";
 import WhyVea from "./WhyVea";
 import Features from "./Features";
 import UseCases from "./UseCases";
-import Cost from "./Cost";
+import Participate from "./Participate";
 import HowDoesItWork from "./HowDoesItWork";
 import BecomeAKeeper from "./BecomeAKeeper";
 import Launch from "./Launch";
@@ -34,7 +34,7 @@ const App = () => (
         <WhyVea />
         <HowDoesItWork />
         <Features />
-        <Cost />
+        <Participate />
         <UseCases />
         <BecomeAKeeper />
         <Launch />

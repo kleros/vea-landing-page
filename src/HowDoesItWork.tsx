@@ -7,16 +7,16 @@ import IconBothWays from "tsx:svgs/icons/both-ways.svg";
 const CARDS: ILightCard[] = [
   {
     body:
-      "A trust-minimized optimistically-verified bridge with bonded " +
-      "participants running a light client to fulfill the roles of oracle, " +
-      "challenger and relayer, the keepers.",
+      "VEA is a trust-minimized optimistically-verified bridge with bonded " +
+      "participants, known as the keepers, running a light client to fulfill " +
+      "the roles of oracle, challenger and relayer.",
   },
   {
     body:
-      "Each VEA bridge is composed of a logical pair of contracts (1-to-1 on " +
-      "each chain), as opposed to other implementations fully connecting " +
-      "every bridge contracts to each others using an off-chain routing " +
-      "network (aka a middle chain).",
+      "As opposed to other implementations that connect every bridge " +
+      "contract with each other using an off-chain routing network, each VEA " +
+      "bridge is composed of a logical pair of contracts (1-to-1 for each " +
+      "connection).",
   },
 ];
 

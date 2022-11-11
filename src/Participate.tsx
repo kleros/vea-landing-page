@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import BigCard, { IBigCard } from "components/BigCard";
 import IconUsers from "tsx:svgs/icons/users.svg";
-import IconKeepers from "tsx:svgs/icons/keepers.svg";
+import IconKeepers from "tsx:svgs/icons/run-client.svg";
 
 const Title = styled.h2`
   text-align: center;
@@ -21,12 +21,12 @@ const CardContainer = styled.div`
 
 const CARDS: IBigCard[] = [
   {
-    title: "for users",
-    body: "Free to use and integrate, for all.",
+    title: "users",
+    body: "Bridge your messages for free, no fees, pay only for gas.",
     Icon: IconUsers,
   },
   {
-    title: "for keepers",
+    title: "keepers",
     body:
       "We encourage the projects relying on Vea to participate in the " +
       "upkeep of the bridging protocol by running the open-source light " +
@@ -35,9 +35,9 @@ const CARDS: IBigCard[] = [
   },
 ];
 
-const Cost: React.FC = () => (
+const Participate: React.FC = () => (
   <div>
-    <Title>how much does it cost?</Title>
+    <Title>how to participate?</Title>
     <CardContainer>
       {CARDS.map((card, i) => (
         <BigCard key={i} {...card} />
@@ -46,4 +46,4 @@ const Cost: React.FC = () => (
   </div>
 );
 
-export default Cost;
+export default Participate;

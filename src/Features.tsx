@@ -7,24 +7,24 @@ const FEATURES: ILightCard[] = [
   {
     title: "trust-minimized",
     body:
-      "Requires only 1 of N honest parties. There is no 3rd party " +
-      "validator, no whitelist of bridge operators.",
+      "VEA has the same trust model as Optimistic Rollups, requires only 1 " +
+      "of N parties to be honest. There is no 3rd party validator.",
   },
   {
     title: "no back door",
-    body: "There is no multi-sign admin access, unlike most bridges.",
+    body: "Unlike most bridges, there is no multi-sign admin access.",
   },
   {
-    title: "immutability",
+    title: "immutable",
     body: "Contracts are not upgradable.",
   },
   {
     title: "generalized",
-    body: "Message passing on EVM chains.",
+    body: "Arbitrary message passing between EVM chains.",
   },
   {
-    title: "trust model",
-    body: "Same as optimistic rollups, at least 1 hones participant.",
+    title: "no whitelist",
+    body: "Interacting with the protocol is permissionless at every level.",
   },
 ];
 

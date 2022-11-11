@@ -1,6 +1,6 @@
 import React from "react";
 import BigCard from "components/BigCard";
-import Icon from "tsx:svgs/icons/run-client.svg";
+import Icon from "tsx:svgs/icons/keepers.svg";
 
 const title = "become a keeper (soon!)";
 
