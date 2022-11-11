@@ -14,15 +14,29 @@ const Container = styled.div`
   `)}
 `;
 
-const SocialButtons: React.FC<{ className?: string }> = ({ className }) => (
-  <Container {...{ className }}>
-    <Button text="telegram" href="https://t.me/veabridge" Icon={IconTelegram} />
-    <Button
-      text="newsletter"
-      href="https://mirror.xyz/blog.vea.eth/subscribe"
-      Icon={IconMail}
-    />
-  </Container>
-);
+const StyledLink = styled.a`
+  text-decoration: none;
+`;
+
+const SocialButtons: React.FC<{ className?: string }> = ({ className }) => {
+  return (
+    <Container {...{ className }}>
+      <StyledLink
+        href="https://t.me/veabridge"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button text="telegram" Icon={IconTelegram} />
+      </StyledLink>
+      <StyledLink
+        href="https://mirror.xyz/blog.vea.eth/subscribe"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button text="newsletter" Icon={IconMail} />
+      </StyledLink>
+    </Container>
+  );
+};
 
 export default SocialButtons;
