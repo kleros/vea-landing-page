@@ -5,6 +5,6 @@
     "tsx:*": ["..."]
   },
   "compressors": {
-    "*.{html,css,js,jsx,ts,tsx,svg,map}": ["@parcel/compressor-brotli"]
+    "*.{html,css,js,jsx,ts,tsx,svg,map}": ["@parcel/compressor-gzip"]
   }
 }

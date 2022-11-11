@@ -824,6 +824,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@parcel/compressor-gzip@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "@parcel/compressor-gzip@npm:2.8.0"
+  dependencies:
+    "@parcel/plugin": 2.8.0
+  checksum: b24970becdf3d85b40f4834d66a8fca0c2987d8a6f124a8ded4a1e10e10ca7c359739bd89c233b6c166508e1759878ad12d0c6255726ccbb471a0643b9e65315
+  languageName: node
+  linkType: hard
+
 "@parcel/compressor-raw@npm:2.8.0":
   version: 2.8.0
   resolution: "@parcel/compressor-raw@npm:2.8.0"
@@ -6563,6 +6572,7 @@ __metadata:
     "@commitlint/cli": ^16.1.0
     "@commitlint/config-conventional": ^16.0.0
     "@parcel/compressor-brotli": ^2.8.0
+    "@parcel/compressor-gzip": ^2.8.0
     "@parcel/transformer-svg-react": ^2.7.0
     "@types/react": ^18.0.24
     "@types/react-dom": ^18.0.8
