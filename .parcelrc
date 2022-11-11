@@ -3,5 +3,8 @@
   "transformers": {
     "tsx:*.svg": ["@parcel/transformer-svg-react"],
     "tsx:*": ["..."]
+  },
+  "compressors": {
+    "*.{html,css,js,jsx,ts,tsx,svg,map}": ["@parcel/compressor-brotli"]
   }
 }
