@@ -28,9 +28,9 @@ const StyledMountains = styled.div`
   background-image: url(${Mountains.toString()});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top left 15%;
+  background-position: top left 45%;
   width: 100%;
-  min-height: 85vh;
+  min-height: 95vh;
 
   ${smallScreenStyle(css`
     margin-top: calc(32px + (64 - 32) * (100vw - 300px) / (1250 - 300));
@@ -38,12 +38,12 @@ const StyledMountains = styled.div`
 `;
 
 const AspectRatio = styled.div`
-  aspect-ratio: 1440/1077;
+  aspect-ratio: 1440/1263;
 `;
 
 const ContentContainer = styled.div`
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 5%;
   right: calc(5% + ((100vw - 300px) / 2));
   display: flex;
