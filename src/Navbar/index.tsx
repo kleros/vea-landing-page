@@ -5,6 +5,9 @@ import Menu from "./Menu";
 
 const Container = styled.div`
   height: 64px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
   background-color: ${({ theme }) => theme.color.pink};
   ${smallScreenStyle(css`
     height: calc(32px + (64 - 32) * (100vw - 300px) / (1250 - 300));
