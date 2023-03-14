@@ -7,7 +7,7 @@ import Features from "./Features";
 import UseCases from "./UseCases";
 import Participate from "./Participate";
 import HowDoesItWork from "./HowDoesItWork";
-import BecomeAKeeper from "./BecomeAKeeper";
+import BecomeAValidator from "./BecomeAValidator";
 import Launch from "./Launch";
 import Footer from "./Footer";
 
@@ -38,7 +38,7 @@ const App = () => (
         <Features />
         <Participate />
         <UseCases />
-        <BecomeAKeeper />
+        <BecomeAValidator />
         <Launch />
       </MiddleSections>
     </Container>
