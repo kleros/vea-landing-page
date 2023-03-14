@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Navbar from "./Navbar";
 import Hero from "./Hero";
 import WhyVea from "./WhyVea";
 import Features from "./Features";
@@ -28,6 +29,7 @@ const MiddleSections = styled.div`
 
 const App = () => (
   <div>
+    <Navbar />
     <Hero />
     <Container>
       <MiddleSections>
