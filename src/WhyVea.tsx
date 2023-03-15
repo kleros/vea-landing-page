@@ -51,7 +51,7 @@ const WhyVea: React.FC = () => (
     <Title>why bridge your messages with VeA?</Title>
     <CardContainer>
       {CARDS.map((card, i) => (
-        <Card key={i} {...card} />
+        <Card data-aos="fade-left" key={i} {...card} />
       ))}
     </CardContainer>
   </Container>

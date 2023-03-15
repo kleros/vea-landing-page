@@ -26,6 +26,7 @@
     "@commitlint/config-conventional": "^16.0.0",
     "@parcel/compressor-brotli": "~2.7.0",
     "@parcel/transformer-svg-react": "~2.7.0",
+    "@types/aos": "^3.0.4",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@types/styled-components": "^5.1.26",
@@ -48,6 +49,7 @@
   },
   "dependencies": {
     "@parcel/compressor-gzip": "~2.7.0",
+    "aos": "next",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
