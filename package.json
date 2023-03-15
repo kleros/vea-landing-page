@@ -24,8 +24,8 @@
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
-    "@parcel/compressor-brotli": "^2.8.0",
-    "@parcel/transformer-svg-react": "^2.7.0",
+    "@parcel/compressor-brotli": "~2.7.0",
+    "@parcel/transformer-svg-react": "~2.7.0",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@types/styled-components": "^5.1.26",
@@ -41,16 +41,17 @@
     "eslint-plugin-security": "^1.4.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.2",
-    "parcel": "^2.8.3",
+    "parcel": "~2.7.0",
     "prettier": "^2.5.1",
     "process": "^0.11.10",
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "@parcel/compressor-gzip": "^2.8.0",
+    "@parcel/compressor-gzip": "~2.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
+    "react-use": "^17.4.0",
     "styled-components": "^5.3.6"
   },
   "volta": {

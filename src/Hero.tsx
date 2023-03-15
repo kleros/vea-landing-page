@@ -24,17 +24,12 @@ const Container = styled.div<{ minHeight: number }>`
 `;
 
 const StyledMountains = styled.div`
-  margin-top: 64px;
   background-image: url(${Mountains.toString()});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left 45%;
   width: 100%;
   min-height: 95vh;
-
-  ${smallScreenStyle(css`
-    margin-top: calc(32px + (64 - 32) * (100vw - 300px) / (1250 - 300));
-  `)}
 `;
 
 const AspectRatio = styled.div`
