@@ -1,6 +1,6 @@
 import React from "react";
 import BigCard from "components/BigCard";
-import Icon from "tsx:svgs/icons/keepers.svg"; // TODO: replace by a new validators.svg
+import Icon from "tsx:svgs/icons/validators.svg";
 
 const title = "become a validator (soon!)";
 

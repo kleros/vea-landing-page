@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import BigCard, { IBigCard } from "components/BigCard";
 import IconUsers from "tsx:svgs/icons/users.svg";
-import IconKeepers from "tsx:svgs/icons/run-client.svg"; // TODO: replace by Validators
+import IconValidators from "tsx:svgs/icons/run-client.svg";
 
 const Title = styled.h2`
   text-align: center;
@@ -31,7 +31,7 @@ const CARDS: IBigCard[] = [
       "We encourage the projects relying on Vea to participate in the " +
       "upkeep of the bridging protocol by running the open-source light " +
       "client.",
-    Icon: IconKeepers,
+    Icon: IconValidators,
   },
 ];
 
