@@ -8,8 +8,8 @@ const CARDS: ILightCard[] = [
   {
     body:
       "VEA is a trust-minimized optimistically-verified bridge with bonded " +
-      "participants, known as the keepers, running a light client to fulfill " +
-      "the roles of oracle, challenger and relayer.",
+      "participants, known as the validators, running a light client " +
+      "to fulfill the roles of oracle, challenger and relayer.",
   },
   {
     body:
@@ -59,7 +59,7 @@ const HowDoesItWork: React.FC = () => (
         <LightCard key={i} {...feature} />
       ))}
     </CardContainer>
-    <SubTitle>what if a keeper is malicious?</SubTitle>
+    <SubTitle>what if a validator is malicious?</SubTitle>
     <StyledCard body={cardBody} Icon={IconBothWays} />
   </div>
 );
