@@ -8,6 +8,7 @@ import { smallScreenStyle } from "styles/smallScreenStyle";
 
 const Container = styled.div`
   width: 100%;
+  overflow: hidden;
 `;
 
 const Title = styled.h2`
