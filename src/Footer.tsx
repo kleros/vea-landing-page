@@ -39,6 +39,9 @@ const InnerContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  ${smallScreenStyle(css`
+    margin-bottom: 32px;
+  `)}
 `;
 
 const Logo = styled.h2`
@@ -79,15 +82,22 @@ const SocialMedia = styled.div`
 `;
 
 const StyledBuiltByKleros = styled(BuiltByKleros)`
-  margin: 32px 0;
-  position: relative;
-  right: -5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+  display: flex;
+
+  ${smallScreenStyle(css`
+    top: 100%;
+  `)}
 `;
 
 const Footer: React.FC = () => (
   <Container>
     <Lines />
     <InnerContainer>
+      <StyledBuiltByKleros />
       <Logo>VeA</Logo>
       <SocialMedia>
         {LINKS.map(({ href, Icon }, i) => (
@@ -102,7 +112,6 @@ const Footer: React.FC = () => (
         ))}
       </SocialMedia>
     </InnerContainer>
-    <StyledBuiltByKleros />
   </Container>
 );
 
