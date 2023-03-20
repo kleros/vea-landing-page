@@ -22,17 +22,17 @@ const ITEMS = [
   {
     text: "Documentation",
     Icon: BookIcon,
-    url: "https://docs.vea.ninja/",
+    url: "https://docs.vea.ninja",
   },
   {
     text: "Devs Tutorial",
     Icon: OpenBookIcon,
-    url: "https://docs.vea.ninja/",
+    url: "https://docs.vea.ninja/build-xchain-dapps/getting-started",
   },
   {
     text: "Validators Tutorial",
     Icon: OpenBookIcon,
-    url: "https://docs.vea.ninja/",
+    url: "https://docs.vea.ninja/run-a-validator/getting-started",
   },
 ];
 
