@@ -13,7 +13,6 @@ const Container = styled.a`
   }
 
   :hover {
-    cursor: pointer;
     transform: scale(1.0025);
   }
 `;
