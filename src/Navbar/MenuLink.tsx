@@ -11,6 +11,11 @@ const Container = styled.a`
     max-width: 16px;
     margin-right: 8px;
   }
+
+  :hover {
+    cursor: pointer;
+    transform: scale(1.0025);
+  }
 `;
 
 interface IMenuLink {

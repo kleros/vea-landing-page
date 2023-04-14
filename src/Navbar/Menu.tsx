@@ -69,6 +69,7 @@ const StyledQuestion = styled(QuestionIcon)`
 
   :hover {
     cursor: pointer;
+    transform: scale(1.07);
   }
 `;
 
