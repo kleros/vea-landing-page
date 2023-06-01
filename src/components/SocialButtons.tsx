@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import { smallScreenStyle } from "styles/smallScreenStyle";
 import Button from "components/Button";
 import IconTelegram from "tsx:svgs/icons/telegram.svg";
-import IconMail from "tsx:svgs/icons/mail.svg";
+import IconBlog from "tsx:svgs/icons/blog.svg";
 
 const Container = styled.div`
   display: flex;
@@ -29,11 +29,11 @@ const SocialButtons: React.FC<{ className?: string }> = ({ className }) => {
         <Button text="telegram" Icon={IconTelegram} />
       </StyledLink>
       <StyledLink
-        href="https://mirror.xyz/blog.vea.eth/subscribe"
+        href="https://blog.kleros.io/introducing-vea/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Button text="newsletter" Icon={IconMail} />
+        <Button text="blog" Icon={IconBlog} />
       </StyledLink>
     </Container>
   );
